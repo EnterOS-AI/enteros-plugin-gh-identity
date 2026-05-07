@@ -32,7 +32,7 @@ axis. At that point:
 - Grade-A hot reload becomes possible (platform can re-emit the file
   without a workspace restart).
 
-[v2]: https://github.com/Molecule-AI/internal/blob/main/product/plugin-architecture-v2.md
+[v2]: https://git.moleculesai.app/molecule-ai/internal/blob/main/product/plugin-architecture-v2.md
 
 ---
 

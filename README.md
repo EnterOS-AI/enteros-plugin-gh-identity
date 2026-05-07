@@ -115,5 +115,5 @@ shared and platform-managed, not in plugin scope).
 - internal `product/plugin-architecture-v2.md` — target arch for v2
   migration
 
-[molecule-core#1957]: https://github.com/Molecule-AI/molecule-core/issues/1957
+[molecule-core#1957]: https://git.moleculesai.app/molecule-ai/molecule-core/issues/1957
 [plugin-architecture-v2]: https://git.moleculesai.app/molecule-ai/internal/src/branch/main/product/plugin-architecture-v2.md
