@@ -1,4 +1,4 @@
-module github.com/Molecule-AI/molecule-ai-plugin-gh-identity
+module go.moleculesai.app/plugin/gh-identity
 
 go 1.25.0
 
@@ -9,7 +9,7 @@ require gopkg.in/yaml.v3 v3.0.1
 // is needed. If we ever need to reference exported types from
 // molecule-monorepo/platform, uncomment:
 //
-//   replace github.com/Molecule-AI/molecule-monorepo/platform => ../molecule-monorepo/workspace-server
+//   replace go.moleculesai.app/core/platform => ../molecule-core/workspace-server
 //
 // Keeping this out of the require list lets the plugin build standalone in CI
 // without checking out the monorepo.

@@ -75,7 +75,7 @@ manifest rename:
 Monorepo side:
 ```
 manifest.json:plugins += {name: "gh-identity", repo: "Molecule-AI/molecule-ai-plugin-gh-identity", ref: "main"}
-workspace-server/go.mod: require github.com/Molecule-AI/molecule-ai-plugin-gh-identity
+workspace-server/go.mod: require go.moleculesai.app/plugin/gh-identity
 workspace-server/cmd/server/main.go: pluginloader.BuildRegistry()
 ```
 
