@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Molecule-AI/molecule-ai-plugin-gh-identity/internal/ghidentity"
+	"go.moleculesai.app/plugin/gh-identity/internal/ghidentity"
 )
 
 // Result bundles what BuildRegistry returns — a single mutator plus
