@@ -1,0 +1,24 @@
+name: molecule-gh-identity
+version: 1.0.0
+description: Injects per-agent GitHub attribution env (MOLECULE_AGENT_ROLE, MOLECULE_OWNER, MOLECULE_ATTRIBUTION_BADGE) and ships a gh/git wrapper so fleet agents sharing one PAT get correct attribution without N machine users. Kills the @me-collapses-to-CEO anti-pattern (molecule-core#1957).
+author: Molecule AI
+tags: [molecule, github, attribution, provision-hook, env-mutator]
+
+# This is a v1 Go env-mutator plugin (kind: env-mutator). Its runtime
+# contribution is a provision-chain EnvMutator built by
+# pluginloader.BuildRegistry(), plus an embedded gh/git wrapper.sh
+# (//go:embed internal/ghidentity/wrapper.sh) the workspace template's
+# install.sh writes to /usr/local/bin. It has no SKILL.md/skills/rules
+# (those are claude-skill-class plugin content); its content lives in
+# Go + an embedded shell wrapper. See README "Plugin manifest (v1)".
+kind: env-mutator
+
+runtimes:
+  - claude_code
+  - openclaw
+  - deepagents
+  - langgraph
+  - hermes
+  - autogen
+
+entrypoint: pluginloader.BuildRegistry
