@@ -26,6 +26,5 @@ jobs:
           QUEUE_LABEL: merge-queue
           HOLD_LABEL: merge-queue-hold
           UPDATE_STYLE: merge
-          REQUIRED_CONTEXTS: >-
-            CI / validate (pull_request)
+          REQUIRED_CONTEXTS: "CI / Go build + test + vet (pull_request), CI / Shellcheck + wrapper tests (pull_request)"
         run: python3 .gitea/scripts/gitea-merge-queue.py
