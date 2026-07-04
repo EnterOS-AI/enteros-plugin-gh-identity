@@ -14,7 +14,7 @@ only has `EnvMutator` today — there's no `FileMutator` or
 plugin to a core-monorepo API change.
 
 **Consequences**:
-- Every workspace template (hermes, claude-code, langgraph, etc.) needs
+- Every workspace template (hermes, claude-code, openclaw, etc.) needs
   a ~10-line `install.sh` snippet to decode + install the wrapper. The
   plugin ships the canonical snippet; template authors paste it in.
 - Wrapper size is capped by env var limits (EC2 user-data ~16KB total;

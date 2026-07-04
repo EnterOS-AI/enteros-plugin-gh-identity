@@ -16,9 +16,6 @@ kind: env-mutator
 runtimes:
   - claude_code
   - openclaw
-  - deepagents
-  - langgraph
   - hermes
-  - autogen
 
 entrypoint: pluginloader.BuildRegistry
